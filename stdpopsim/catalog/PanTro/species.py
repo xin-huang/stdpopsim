@@ -53,9 +53,9 @@ _gen_time_citation = stdpopsim.Citation(
 )
 
 _pop_size_citation = stdpopsim.Citation(
-    author="Lin et al.",
-    year="2014",
-    doi="https://doi.org/10.1038/ng.3117",
+    author="de Manuel et al.",
+    year="2016",
+    doi="https://doi.org/10.1126/science.aag2602",
     reasons={stdpopsim.CiteReason.POP_SIZE},
 )
 
@@ -66,7 +66,7 @@ _species = stdpopsim.Species(
     genome=_genome,
     generation_time=25,
     generation_time_citations=[_gen_time_citation.because(stdpopsim.CiteReason.GEN_TIME)],
-    population_size=8.075 * 10 ** 4,
+    population_size=15000,
     population_size_citations=[_pop_size_citation.because(stdpopsim.CiteReason.POP_SIZE)],
 )
 
