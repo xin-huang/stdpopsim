@@ -32,7 +32,7 @@ for name, data in genome_data.data["chromosomes"].items():
             length=data["length"],
             synonyms=data["synonyms"],
             mutation_rate=1.20e-8,
-            recombination_rate=1.60e-8,
+            recombination_rate=0.7e-8,
         )
     )
 
