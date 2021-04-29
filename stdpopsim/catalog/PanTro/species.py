@@ -10,16 +10,16 @@ _assembly_citation = stdpopsim.Citation(
 )
 
 _mutation_rate_citation = stdpopsim.Citation(
-    author="de Manuel et al.",
-    year="2016",
-    doi="https://doi.org/10.1126/science.aag2602",
+    author="Kong et al.",
+    year="2012",
+    doi="https://doi.org/10.1038/nature11396",
     reasons={stdpopsim.CiteReason.MUT_RATE},
 )
 
 _recombination_rate_citation = stdpopsim.Citation(
-    author="de Manuel et al.",
+    author="Stevison et al.",
     year="2016",
-    doi="https://doi.org/10.1126/science.aag2602",
+    doi="https://doi.org/10.1093/molbev/msv331",
     reasons={stdpopsim.CiteReason.REC_RATE},
 )
 
@@ -46,9 +46,9 @@ _genome = stdpopsim.Genome(
 )
 
 _gen_time_citation = stdpopsim.Citation(
-    author="de Manuel et al.",
-    year="2016",
-    doi="https://doi.org/10.1126/science.aag2602",
+    author="Langergraber et al.",
+    year="2012",
+    doi="https://doi.org/10.1073/pnas.1211740109",
     reasons={stdpopsim.CiteReason.GEN_TIME},
 )
 
