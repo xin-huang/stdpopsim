@@ -96,14 +96,14 @@ def _bcen_4D16():
     m_NigCam_aEC = 0.02/(2*N_A)
     m_aEC_NigCam = 0.01/(2*N_A)
     
-    # times
-    T_Bon_split = 1562000
-    T_NigCam_split = 429000
-    T_East_Cent_split = 104000
-    T_Bon_mig_stop = 77000
-    T_NigCam_mig_stop = 15000
-    T_botl_Bon = 439000
-    T_botl_NigCam = 86000
+    # times (generation)
+    T_Bon_split = int(1562000/generation_time)
+    T_NigCam_split = int(429000/generation_time)
+    T_East_Cent_split = int(104000/generation_time)
+    T_Bon_mig_stop = int(77000/generation_time)
+    T_NigCam_mig_stop = int(15000/generation_time)
+    T_botl_Bon = int(439000/generation_time)
+    T_botl_NigCam = int(86000/generation_time)
     
     population_configurations=[
         msprime.PopulationConfiguration(

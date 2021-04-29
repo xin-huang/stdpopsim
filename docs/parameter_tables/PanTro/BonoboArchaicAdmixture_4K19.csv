@@ -1,0 +1,30 @@
+Population size,"43,566",Ancestral pop. size (Effective size of the ghost before split from the Pan populations)
+Population size,"8,373",Ancestral pop. size of Bonobo-chimpanzees
+Population size,"12,338",Ancestral pop. size of common chimpanzees
+Population size,"2,920",Ancestral pop. size of Bonobo
+Population size,"38,996",Ancestral pop. size of Central chimpanzees
+Population size,"1,748",Ancestral pop. size of Western chimpanzees
+Population size,"20,412",Pop. size of Bonobo
+Population size,"64,910",Pop. size of Central chimpanzees
+Population size,"15,222",Pop. size of Western chimpanzees
+Population size,"691",Recent pop. size of Bonobo
+Population size,"1,042",Recent pop. size of Central chimpanzees
+Population size,"386",Recent pop. size of Western chimpanzees
+Migration rate (x10^-5),1.39,Western -> Central chimpanzees migration rate
+Migration rate (x10^-5),2.01,Central -> Western chimpanzees migration rate
+Migration rate (x10^-5),0.071,Bonobo -> Central chimpanzees migration rate
+Migration rate (x10^-5),0.10,Central chimpanzees -> Bonobo migration rate
+Migration rate (x10^-5),0.0014,Bonobo -> Ancestral common chimpanzees migration rate
+Migration rate (x10^-5),0.023,Ancestral common chimpanzees -> Bonobo migration rate
+Time (yrs.),"3,229,000",Time of the ghost population split
+Time (yrs.),"1,821,000",Time of Bonobo split
+Time (yrs.),"631,000",Time of Western chimpanzees split
+Time (yrs.),"201,000",Time of Bonobo migration stop
+Time (yrs.),"195,000",Time of Western chimpanzees migration stop
+Time (yrs.),"388,000",Time of Bonobo resize
+Time (yrs.),"547,000",Time of Central chimpanzees resize
+Time (yrs.),"207,000",Time of Western chimpanzees resize
+Time (yrs.),"1,209,000",Time of admixture with the ghost population
+Admix percentage,0.11,Admixture contribution from the ghost population
+Generation time (yrs.),25,Generation time
+Mutation rate,1.2e-8,Per-base per-generation mutation rate
