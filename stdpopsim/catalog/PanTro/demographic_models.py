@@ -38,11 +38,6 @@ _nigeria_cameroon_chimpanzee = stdpopsim.Population(
     description="Pan Troglodytes Ellioti"
 )
 
-_ghost = stdpopsim.Population(
-    id="Ghost",
-    description="Ghost population"
-)
-
 _de_Manuel_et_al = stdpopsim.Citation(
     author="de Manuel et al.",
     year="2016",
@@ -68,7 +63,9 @@ def _bcen_4D16():
     generation_time = 25
     mutation_rate = 1.2e-8
     
-    # population sizes (Table S15 caption - all effective sizes are given as number of diploid individuals)
+    # Figure S54
+    # Table S18
+    # population sizes (Table S18 caption - all effective sizes are given as number of diploid individuals)
     N_A = 15299*2 # ancestral population size of bonobo-chimpanzees
     N_anc_Bon = 2947*2 # ancestral population size of bonobos before bottleneck
     N_anc_CChimp = 19326*2 # ancestral population size of common chimpanzees
@@ -98,7 +95,7 @@ def _bcen_4D16():
     m_aEC_Bon = 0
     # migration rates between bonobos and the ancestral common chimpanzees
     m_Bon_aC = 0.03/(2*N_A)
-    m_ac_Bon = 0.03/(2*N_A)
+    m_aC_Bon = 0.03/(2*N_A)
     # migration rates between central and eastern chimpanzees
     m_Cent_East = 1.17/(2*N_A)
     m_East_Cent = 4.34/(2*N_A)
@@ -249,7 +246,7 @@ def _bcen_4D16():
             time=T_NigCam_split, rate=m_Bon_aC, matrix_index=(0, 1)
         ),
         msprime.MigrationRateChange(
-            time=T_NigCam_split, rate=m_ac_Bon, matrix_index=(1, 0)
+            time=T_NigCam_split, rate=m_aC_Bon, matrix_index=(1, 0)
         ),
         # merge ancestral common chimpanzees and bonobos
         msprime.MassMigration(
@@ -288,6 +285,8 @@ def _bcew_4D16():
     generation_time = 25
     mutation_rate = 1.2e-8
     
+    # Figure S51
+    # Table S15
     # population sizes (Table S15 caption - all effective sizes are given as number of diploid individuals)
     N_A = 5738*2 # ancestral population size of bonobo-chimpanzees
     N_anc_Bon = 23968*2 # ancestral population size of bonobos before bottleneck
@@ -318,7 +317,7 @@ def _bcew_4D16():
     m_aEC_Bon = 0.08/(2*N_A)
     # migration rates between bonobos and the ancestral common chimpanzees
     m_Bon_aC = 0.01/(2*N_A)
-    m_ac_Bon = 0.18/(2*N_A)
+    m_aC_Bon = 0.18/(2*N_A)
     # migration rates between central and eastern chimpanzees
     m_Cent_East = 1.32/(2*N_A)
     m_East_Cent = 4.92/(2*N_A)
@@ -469,7 +468,7 @@ def _bcew_4D16():
             time=T_West_split, rate=m_Bon_aC, matrix_index=(0, 1)
         ),
         msprime.MigrationRateChange(
-            time=T_West_split, rate=m_ac_Bon, matrix_index=(1, 0)
+            time=T_West_split, rate=m_aC_Bon, matrix_index=(1, 0)
         ),
         # merge ancestral common chimpanzees and bonobos
         msprime.MassMigration(
@@ -502,11 +501,58 @@ def _bonobo_archaic_admixture_4K19():
     id = "BonoboArchaicAdmixture_4K19"
     description = "Demographic model for bonobos, central and western chimpanzees with admixture from a ghost population"
     long_description = """"""
-    populations = [_bonobo, _central_chimpanzee, _western_chimpanzee, _ghost]
+    populations = [
+        _bonobo, 
+        _central_chimpanzee, 
+        _western_chimpanzee,
+        stdpopsim.Population(
+            "Ghost", "Putative pan population", sampling_time=None
+        ),
+    ]
     citations = [_kuhlwilm_et_al]
     
     generation_time = 25
     mutation_rate = 1.2e-8
+    
+    # Figure 3
+    # Supplementary Table S2.3
+    # population sizes (diploid Ne)
+    N_A = 43566*2 # ancestral population size (Effective size of the ghost before split from the Pan population)
+    N_anc_Bon_Chimp = 8378*2 # ancestral population size of the Pan population
+    N_anc_CChimp = 12338*2 # ancestral population size of common chimpanzees
+    N_anc_Bon = 2920*2 # ancestral population size of bonobos
+    N_anc_Cent = 38996*2 # ancestral population size of central chimpanzees
+    N_anc_West = 15222*2 # ancestral population size of western chimpanzees
+    N_Bon = 20412*2 # population size of bonobos
+    N_Cent = 64910*2 # population size of central chimpanzees
+    N_West = 15222*2 # population size of western chimpanzees
+    N_curr_Bon = 691*2 # current population size of bonobos
+    N_curr_Cent = 1042*2 # current population size of central chimpanzees
+    N_curr_West = 386*2 # current population size of western chimpanzees
+    
+    # migration rates
+    # migration rates between western and central chimpanzees
+    m_West_Cent = 1.211/(2*N_A)
+    m_Cent_West = 1.750/(2*N_A)
+    # migration rates between bonobos and central chimpanzees
+    m_Bon_Cent = 0.062/(2*N_A)
+    m_Cent_Bon = 0.089/(2*N_A)
+    # migration rates between bonobos and ancestral common chimpanzees
+    m_Bon_CChimp = 1.20e-3/(2*N_A)
+    m_CChimp_Bon = 2.02e-2/(2*N_A)
+    
+    admix_prop = 0.11 # admixture proportion from the ghost
+    
+    # Times (generation)
+    T_ghost_split = int(3229000/generation_time)
+    T_Bon_split = int(1821000/generation_time)
+    T_West_split = int(631000/generation_time)
+    T_Bon_mig_stop = int(201000/generation_time)
+    T_West_mig_stop = int(195000/generation_time)
+    T_Bon_resize = int(388000/generation_time)
+    T_Cent_resize = int(547000/generation_time)
+    T_West_resize = int(207000/generation_time)
+    T_ghost_admix = int(1209000/generation_time)
     
     population_configurations=[
         msprime.PopulationConfiguration(
@@ -521,16 +567,84 @@ def _bonobo_archaic_admixture_4K19():
             initial_size=N_curr_West,
             metadata=populations[2].asdict()
         ),
+        # the ghost
+        msprime.PopulationConfiguration(
+            initial_size=N_A, metadata=populations[3].asdict()
+        ),
     ]
     
     migration_matrix=[
-        # bonobo, central, western
-        [0, 0, 0], # bonobo
-        [0, 0, 0], # central
-        [0, 0, 0], # western
+        # bonobo, central, western, ghost
+        [0, 0, 0, 0], # bonobo
+        [0, 0, 0, 0], # central
+        [0, 0, 0, 0], # western
+        [0, 0, 0, 0], # ghost
     ]
     
     demographic_events=[
+        # migration between western and central chimpanzees
+        msprime.MigrationRateChange(
+            time=T_West_mig_stop, rate=m_Cent_West, matrix_index=(1, 2)
+        ),
+        msprime.MigrationRateChange(
+            time=T_West_mig_stop, rate=m_West_Cent, matrix_index=(2, 1)
+        ),
+        # migration between bonobos and central chimpanzees
+        msprime.MigrationRateChange(
+            time=T_Bon_mig_stop, rate=m_Bon_Cent, matrix_index=(0, 1)
+        ),
+        msprime.MigrationRateChange(
+            time=T_Bon_mig_stop, rate=m_Cent_Bon, matrix_index=(1, 0)
+        ),
+        # admixture from the ghost into bonobos
+        msprime.MassMigration(
+            time=T_ghost_admix,
+            proportion=admix_prop,
+            source=3,
+            destination=0,
+        ),
+        # merge western into central chimpanzees
+        msprime.MassMigration(
+            time=T_West_split,
+            proportion=1,
+            source=2,
+            destination=1,
+        ),
+        msprime.MigrationRateChange(
+            time=T_West_split, rate=0
+        ),
+        msprime.MigrationRateChange(
+            time=T_West_split, rate=m_Bon_CChimp, matrix_index=(0, 1)
+        ),
+        msprime.MigrationRateChange(
+            time=T_West_split, rate=m_CChimp_Bon, matrix_index=(1, 0)
+        ),
+        msprime.PopulationParametersChange(
+            time=T_West_split, initial_size=N_anc_CChimp, population_id=1
+        ),
+        # merge common chimpanzees and bonobos
+        msprime.MassMigration(
+            time=T_Bon_split,
+            proportion=1,
+            source=1,
+            destination=0,
+        ),
+        msprime.MigrationRateChange(
+            time=T_Bon_split, rate=0
+        ),
+        msprime.PopulationParametersChange(
+            time=T_Bon_split, initial_size=N_anc_Bon_Chimp, population_id=0
+        ),
+        # merge Pan population and the ghost
+        msprime.MassMigration(
+            time=T_ghost_split,
+            proportion=1,
+            source=0,
+            destination=3,
+        ),
+        msprime.PopulationParametersChange(
+            time=T_ghost_split, initial_size=N_A, population_id=3
+        ),
     ]
     
     return stdpopsim.DemographicModel(
