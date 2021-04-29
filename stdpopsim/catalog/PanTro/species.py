@@ -61,7 +61,7 @@ _pop_size_citation = stdpopsim.Citation(
 
 _species = stdpopsim.Species(
     id="PanTro",
-    name="Pan troglodytes",
+    name="Pan Troglodytes",
     common_name="Chimpanzee",
     genome=_genome,
     generation_time=25,
