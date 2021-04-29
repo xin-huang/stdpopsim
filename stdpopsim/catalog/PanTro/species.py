@@ -40,7 +40,6 @@ _genome = stdpopsim.Genome(
     chromosomes=_chromosomes,
     assembly_name=genome_data.data["assembly_name"],
     assembly_accession=genome_data.data["assembly_accession"],
-    assembly_citations=[],
     citations=[
         _assembly_citation,
         _mutation_rate_citation.because(stdpopsim.CiteReason.MUT_RATE),
