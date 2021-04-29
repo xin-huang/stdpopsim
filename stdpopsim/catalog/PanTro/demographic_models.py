@@ -45,7 +45,7 @@ _de_Manuel_et_al = stdpopsim.Citation(
     reasons={stdpopsim.CiteReason.DEM_MODEL},
 )
 
-_Kuhlwilm_et_al = stdpopsim.Citation(
+_kuhlwilm_et_al = stdpopsim.Citation(
     author="Kuhlwilm et al.",
     year="2019",
     doi="https://doi.org/10.1038/s41559-019-0881-7",
