@@ -635,7 +635,7 @@ def _bonobo_archaic_admixture_4K19():
         msprime.PopulationParametersChange(
             time=T_Bon_split, initial_size=N_anc_Bon_Chimp, population_id=0
         ),
-        # merge Pan population and the ghost
+        # merge the Pan population and the ghost
         msprime.MassMigration(
             time=T_ghost_split,
             proportion=1,

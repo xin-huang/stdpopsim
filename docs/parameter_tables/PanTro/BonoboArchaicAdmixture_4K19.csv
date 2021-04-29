@@ -1,21 +1,21 @@
-Population size,"43,566",Ancestral pop. size (Effective size of the ghost before split from the Pan populations)
-Population size,"8,373",Ancestral pop. size of Bonobo-chimpanzees
-Population size,"12,338",Ancestral pop. size of common chimpanzees
-Population size,"2,920",Ancestral pop. size of Bonobo
-Population size,"38,996",Ancestral pop. size of Central chimpanzees
-Population size,"1,748",Ancestral pop. size of Western chimpanzees
-Population size,"20,412",Pop. size of Bonobo
-Population size,"64,910",Pop. size of Central chimpanzees
-Population size,"15,222",Pop. size of Western chimpanzees
-Population size,"691",Recent pop. size of Bonobo
-Population size,"1,042",Recent pop. size of Central chimpanzees
-Population size,"386",Recent pop. size of Western chimpanzees
-Migration rate (x10^-5),1.39,Western -> Central chimpanzees migration rate
-Migration rate (x10^-5),2.01,Central -> Western chimpanzees migration rate
-Migration rate (x10^-5),0.071,Bonobo -> Central chimpanzees migration rate
-Migration rate (x10^-5),0.10,Central chimpanzees -> Bonobo migration rate
-Migration rate (x10^-5),0.0014,Bonobo -> Ancestral common chimpanzees migration rate
-Migration rate (x10^-5),0.023,Ancestral common chimpanzees -> Bonobo migration rate
+Population size,"87,132",Ancestral pop. size (Effective size of the ghost before split from the Pan populations)
+Population size,"16,746",Ancestral pop. size of Bonobo-chimpanzees
+Population size,"24,676",Ancestral pop. size of common chimpanzees
+Population size,"5,840",Ancestral pop. size of Bonobo
+Population size,"77,992",Ancestral pop. size of Central chimpanzees
+Population size,"3,496",Ancestral pop. size of Western chimpanzees
+Population size,"40,824",Pop. size of Bonobo
+Population size,"129,820",Pop. size of Central chimpanzees
+Population size,"30,444",Pop. size of Western chimpanzees
+Population size,"1,382",Recent pop. size of Bonobo
+Population size,"2,084",Recent pop. size of Central chimpanzees
+Population size,"772",Recent pop. size of Western chimpanzees
+Migration rate (x10^-5),0.70,Western -> Central chimpanzees migration rate
+Migration rate (x10^-5),1.00,Central -> Western chimpanzees migration rate
+Migration rate (x10^-5),0.036,Bonobo -> Central chimpanzees migration rate
+Migration rate (x10^-5),0.051,Central chimpanzees -> Bonobo migration rate
+Migration rate (x10^-5),0.00069,Bonobo -> Ancestral common chimpanzees migration rate
+Migration rate (x10^-5),0.0012,Ancestral common chimpanzees -> Bonobo migration rate
 Time (yrs.),"3,229,000",Time of the ghost population split
 Time (yrs.),"1,821,000",Time of Bonobo split
 Time (yrs.),"631,000",Time of Western chimpanzees split
