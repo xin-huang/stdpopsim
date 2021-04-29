@@ -1,42 +1,43 @@
-Population size,"15,299",Ancestral pop. size
-Population size,"2,947",Ancestral Bonobo pop. size before migration stop
-Population size,"19,326",Ancestral common chimpanzee pop. size
-Population size,"157,757",Ancestral Eastern and Central chimpanzee pop. size
-Population size,"12,435",Ancestral Nigeria-Cameroon chimpanzee pop. size before migration stop
-Population size,"17,490",Ancestral Bonobo pop. size after migration stop
-Population size,"10,634",Ancestral Eastern chimpanzee pop. size
-Population size,"33,578",Ancestral Central chimpanzee pop. size
-Population size,"13,279",Ancestral Nigeria-Cameroon chimpanzee pop. size after migration stop
-Population size,"1,369",Current Bonobo pop. size
-Population size,"2,150",Current Eastern chimpanzee pop. size
-Population size,"2,705",Current Central chimpanzee pop. size
-Population size,"453",Current Nigeria-Cameroon chimpanzee pop. size
-Population size,"19",Ancestral common chimpanzee pop. size during bottleneck
-Population size,"252",Ancestral Nigeria-Cameroon chimpanzee pop. size during the first bottleneck
-Population size,"561",Ancestral Eastern chimpanzee pop. size during bottleneck
-Population size,"2,133",Ancestral Central chimpanzee pop. size during bottleneck
-Population size,"790",Ancestral Nigeria-Cameroon chimpanzee pop. size during the second bottleneck
-Population size,"947",Ancestral Bonobo pop. size during bottleneck
-Migration rate (x10^-5),0.20,Bonobo -> Ancestral common chimpanzee migration rate
-Migration rate (x10^-5),0.20,Ancestral common chimpanzee -> Bonobo migration rate
-Migration rate (x10^-5),0,Bonobo -> Ancestral Eastern and Central chimpanzee migration rate
-Migration rate (x10^-5),0,Ancestral Eastern and Central chimpanzee -> Bonobo migration rate
-Migration rate (x10^-5),1.57,Bonobo -> Central chimpanzee migration rate
-Migration rate (x10^-5),0.92,Central chimpanzee -> Bonobo migration rate
-Migration rate (x10^-5),0.07,Ancestral Eastern and Central chimpanzee -> Nigeria-Cameroon chimpanzee migration rate
-Migration rate (x10^-5),0.13,Nigeria-Cameroon chimpanzee -> Ancestral Eastern and Central chimpanzee migration rate
-Migration rate (x10^-5),2.94,Eastern chimpanzee -> Nigeria-Cameroon chimpanzee migration rate
-Migration rate (x10^-5),3.73,Nigeria-Cameroon chimpanzee -> Eastern chimpanzee migration rate
-Migration rate (x10^-5),12.42,Central chimpanzee -> Nigeria-Cameroon chimpanzee migration rate
-Migration rate (x10^-5),4.97,Nigeria-Cameroon chimpanzee -> Central chimpanzee migration rate
-Migration rate (x10^-5),7.65,Central chimpanzee -> Eastern chimpanzee migration rate
-Migration rate (x10^-5),28.37,Eastern chimpanzee -> Central chimpanzee migration rate
-Time (yrs.),"1,562,000",Time of Bonobo and common chimpanzee split
-Time (yrs.),"429,000",Time of Nigeria-Cameroon chimpanzee split from common chimpanzee
-Time (yrs.),"104,000",Time of Central and Eastern chimpazee split
-Time (yrs.),"77,000",Time of Bonobo migration stop
-Time (yrs.),"15,000",Time of Nigeria-Cameroon chimpanzee migration stop
-Time (yrs.),"439,000",Time of Bonobo bottleneck
-Time (yrs.),"86,000",Time of Nigeria-Cameroon chimpanzee bottleneck
+Population size,"30,598",Ancestral pop. size (Nanc)
+Population size,"5,894",Ancestral Bonobo pop. size before bottleneck (NancB)
+Population size,"38,652",Ancestral common chimpanzee pop. size (NancCChimp)
+Population size,"315,514",Ancestral Eastern and Central chimpanzee pop. size (NancCE)
+Population size,"24,870",Ancestral Nigeria-Cameroon chimpanzee pop. size before the second bottleneck (NancNigCam)
+Population size,"34,980",Ancestral Bonobo pop. size after bottleneck (NBon)
+Population size,"21,268",Ancestral Eastern chimpanzee pop. size (NEast)
+Population size,"67,156",Ancestral Central chimpanzee pop. size (NCent)
+Population size,"26,558",Ancestral Nigeria-Cameroon chimpanzee pop. size after the second bottleck (NNigCam)
+Population size,"2,738",Current Bonobo pop. size (NrecB)
+Population size,"4,300",Current Eastern chimpanzee pop. size (NrecE)
+Population size,"5,410",Current Central chimpanzee pop. size (NrecC)
+Population size,"906",Current Nigeria-Cameroon chimpanzee pop. size (NrecNc)
+Population size,"38",Ancestral common chimpanzee pop. size during bottleneck (NBotlSplitCChimp)
+Population size,"504",Ancestral Nigeria-Cameroon chimpanzee pop. size during the first bottleneck (NBotlSplitNc)
+Population size,"1,122",Ancestral Eastern chimpanzee pop. size during bottleneck (NBotlSplitE)
+Population size,"4,266",Ancestral Central chimpanzee pop. size during bottleneck (NBotlSplitC)
+Population size,"1,580",Ancestral Nigeria-Cameroon chimpanzee pop. size during the second bottleneck (NBotlNc)
+Population size,"1,894",Ancestral Bonobo pop. size during bottleneck (NBotlB)
+Migration rate (x10^-5),0.049,Bonobo -> Ancestral common chimpanzee migration rate (NmBaC)
+Migration rate (x10^-5),0.049,Ancestral common chimpanzee -> Bonobo migration rate (NmaCB)
+Migration rate (x10^-5),0,Bonobo -> Ancestral Eastern and Central chimpanzee migration rate (NmBaEC)
+Migration rate (x10^-5),0,Ancestral Eastern and Central chimpanzee -> Bonobo migration rate (NmaECB)
+Migration rate (x10^-5),0.39,Bonobo -> Central chimpanzee migration rate (NmBC)
+Migration rate (x10^-5),0.23,Central chimpanzee -> Bonobo migration rate (NmCB)
+Migration rate (x10^-5),0.016,Ancestral Eastern and Central chimpanzee -> Nigeria-Cameroon chimpanzee migration rate (NmaECN)
+Migration rate (x10^-5),0.033,Nigeria-Cameroon chimpanzee -> Ancestral Eastern and Central chimpanzee migration rate (NmNaEC)
+Migration rate (x10^-5),0.74,Eastern chimpanzee -> Nigeria-Cameroon chimpanzee migration rate (NmEN)
+Migration rate (x10^-5),0.93,Nigeria-Cameroon chimpanzee -> Eastern chimpanzee migration rate (NmNE)
+Migration rate (x10^-5),3.10,Central chimpanzee -> Nigeria-Cameroon chimpanzee migration rate (NmCN)
+Migration rate (x10^-5),1.24,Nigeria-Cameroon chimpanzee -> Central chimpanzee migration rate (NmNC)
+Migration rate (x10^-5),1.91,Central chimpanzee -> Eastern chimpanzee migration rate (NmCE)
+Migration rate (x10^-5),7.09,Eastern chimpanzee -> Central chimpanzee migration rate (NmEC)
+Time (yrs.),"1,562,000",Time of Bonobo and common chimpanzee split (TBonobo)
+Time (yrs.),"429,000",Time of Nigeria-Cameroon chimpanzee split from common chimpanzee (TNigCam)
+Time (yrs.),"104,000",Time of Central and Eastern chimpazee split (TEasternCentral)
+Time (yrs.),"77,000",Time of Bonobo migration stop (TMigStopBonobo)
+Time (yrs.),"15,000",Time of Nigeria-Cameroon chimpanzee migration stop (TMigStopNigCam)
+Time (yrs.),"439,000",Time of Bonobo bottleneck (TBotlB)
+Time (yrs.),"86,000",Time of Nigeria-Cameroon chimpanzee bottleneck (TBotNigCam)
+Time (yrs.),"1,700",Time of recent population decline
 Generation time (yrs.),25,Generation time
 Mutation rate,1.2e-8,Per-base per-generation mutation rate
