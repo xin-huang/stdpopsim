@@ -1,42 +1,43 @@
-Population size,"5,738",Ancestral pop. size
-Population size,"23,968",Ancestral Bonobo pop. size before migration stop
-Population size,"12,302",Ancestral common chimpanzee pop. size
-Population size,"74,044",Ancestral Eastern and Central chimpanzee pop. size
-Population size,"1,895",Ancestral Western chimpanzee pop. size before migration stop
-Population size,"16,232",Ancestral Bonobo pop. size after migration stop
-Population size,"17,650",Ancestral Eastern chimpanzee pop. size
-Population size,"48,306",Ancestral Central chimpanzee pop. size
-Population size,"12,323",Ancestral Western chimpanzee pop. size after migration stop
-Population size,"2,069",Current Bonobo pop. size
-Population size,"1,738",Current Eastern chimpanzee pop. size
-Population size,"2,444",Current Central chimpanzee pop. size
-Population size,"545",Current Western chimpanzee pop. size
-Population size,"1,374",Ancestral common chimpanzee pop. size during bottleneck
-Population size,"1,409",Ancestral Western chimpanzee pop. size during the first bottleneck
-Population size,"508",Ancestral Eastern chimpanzee pop. size during bottleneck
-Population size,"2,160",Ancestral Central chimpanzee pop. size during bottleneck
-Population size,"1,185",Ancestral Western chimpanzee pop. size during the second bottleneck
-Population size,"17",Ancestral Bonobo pop. size during bottleneck
-Migration rate (x10^-5),0.17,Bonobo -> Ancestral common chimpanzee migration rate
-Migration rate (x10^-5),3.14,Ancestral common chimpanzee -> Bonobo migration rate
-Migration rate (x10^-5),1.05,Bonobo -> Ancestral Eastern and Central chimpanzee migration rate
-Migration rate (x10^-5),1.39,Ancestral Eastern and Central chimpanzee -> Bonobo migration rate
-Migration rate (x10^-5),0,Bonobo -> Central chimpanzee migration rate
-Migration rate (x10^-5),1.57,Central chimpanzee -> Bonobo migration rate
-Migration rate (x10^-5),2.44,Ancestral Eastern and Central chimpanzee -> Western chimpanzee migration rate
-Migration rate (x10^-5),16.21,Western chimpanzee -> Ancestral Eastern and Central chimpanzee migration rate
-Migration rate (x10^-5),0,Eastern chimpanzee -> Western chimpanzee migration rate
-Migration rate (x10^-5),11.50,Western chimpanzee -> Eastern chimpanzee migration rate
-Migration rate (x10^-5),0,Central chimpanzee -> Western chimpanzee migration rate
-Migration rate (x10^-5),0.35,Western chimpanzee -> Central chimpanzee migration rate
-Migration rate (x10^-5),23.00,Central chimpanzee -> Eastern chimpanzee migration rate
-Migration rate (x10^-5),85.74,Eastern chimpanzee -> Central chimpanzee migration rate
-Time (yrs.),"1,989,000",Time of Bonobo and common chimpanzee split
-Time (yrs.),"603,000",Time of Western chimpanzee split from common chimpanzee
-Time (yrs.),"164,000",Time of Central and Eastern chimpazee split
-Time (yrs.),"125,000",Time of Bonobo migration stop
-Time (yrs.),"112,000",Time of Western chimpanzee migration stop
-Time (yrs.),"555,000",Time of Bonobo bottleneck
-Time (yrs.),"221,000",Time of Western chimpanzee bottleneck
+Population size,"11,476",Ancestral pop. size (Nanc*2)
+Population size,"47,936",Ancestral Bonobo pop. size before bottleneck (NancB*2)
+Population size,"24,604",Ancestral common chimpanzee pop. size (NancCChimp*2)
+Population size,"148,088",Ancestral Eastern and Central chimpanzee pop. size (NancCE*2)
+Population size,"3,790",Ancestral Western chimpanzee pop. size before the second bottleneck (NancW*2)
+Population size,"32,464",Ancestral Bonobo pop. size after bottleneck (NBon*2)
+Population size,"35,300",Ancestral Eastern chimpanzee pop. size (NEast*2)
+Population size,"96,612",Ancestral Central chimpanzee pop. size (NCent*2)
+Population size,"24,646",Ancestral Western chimpanzee pop. size after the second bottleneck (NWest)
+Population size,"4,138",Current Bonobo pop. size (NrecB*2)
+Population size,"3,476",Current Eastern chimpanzee pop. size (NrecE*2)
+Population size,"4,888",Current Central chimpanzee pop. size (NrecC*2)
+Population size,"1,090",Current Western chimpanzee pop. size (NrecW*2)
+Population size,"2,748",Ancestral common chimpanzee pop. size during bottleneck (NBotlSplitCChimp)
+Population size,"2,818",Ancestral Western chimpanzee pop. size during the first bottleneck (NBotlSplitW)
+Population size,"1,016",Ancestral Eastern chimpanzee pop. size during bottleneck (NBotlSplitE)
+Population size,"4,320",Ancestral Central chimpanzee pop. size during bottleneck (NBotlSplitC)
+Population size,"2,370",Ancestral Western chimpanzee pop. size during the second bottleneck (NBotlW)
+Population size,"34",Ancestral Bonobo pop. size during bottleneck (NBotlB)
+Migration rate (x10^-5),0.044,Bonobo -> Ancestral common chimpanzee migration rate (NmBaC/(2*Nanc*2))
+Migration rate (x10^-5),0.78,Ancestral common chimpanzee -> Bonobo migration rate (NmaCB/(2*Nanc*2))
+Migration rate (x10^-5),0.26,Bonobo -> Ancestral Eastern and Central chimpanzee migration rate (NmBaEC/(2*Nanc*2))
+Migration rate (x10^-5),0.35,Ancestral Eastern and Central chimpanzee -> Bonobo migration rate (NmaECB/(2*Nanc*2))
+Migration rate (x10^-5),0,Bonobo -> Central chimpanzee migration rate (NmBC/(2*Nanc*2))
+Migration rate (x10^-5),0.39,Central chimpanzee -> Bonobo migration rate (NmCB/(2*Nanc*2))
+Migration rate (x10^-5),0.61,Ancestral Eastern and Central chimpanzee -> Western chimpanzee migration rate (NmaECW/(2*Nanc*2))
+Migration rate (x10^-5),4.05,Western chimpanzee -> Ancestral Eastern and Central chimpanzee migration rate (NmWaEC/(2*Nanc*2))
+Migration rate (x10^-5),0,Eastern chimpanzee -> Western chimpanzee migration rate (NmEW/(2*Nanc*2))
+Migration rate (x10^-5),2.88,Western chimpanzee -> Eastern chimpanzee migration rate (NmWE/(2*Nanc*2))
+Migration rate (x10^-5),0,Central chimpanzee -> Western chimpanzee migration rate (NmCW/(2*Nanc*2))
+Migration rate (x10^-5),0.087,Western chimpanzee -> Central chimpanzee migration rate (NmWC/(2*Nanc*2))
+Migration rate (x10^-5),5.75,Central chimpanzee -> Eastern chimpanzee migration rate (NmCE/(2*Nanc*2))
+Migration rate (x10^-5),21.43,Eastern chimpanzee -> Central chimpanzee migration rate (NmEC/(2*Nanc*2))
+Time (yrs.),"1,989,000",Time of Bonobo and common chimpanzee split (TBonobo*1000)
+Time (yrs.),"603,000",Time of Western chimpanzee split from common chimpanzee (TWestern*1000)
+Time (yrs.),"164,000",Time of Central and Eastern chimpazee split (TEasternCentral*1000)
+Time (yrs.),"125,000",Time of Bonobo migration stop (TMigStopBonobo*1000)
+Time (yrs.),"112,000",Time of Western chimpanzee migration stop (TMigStopWestern*1000)
+Time (yrs.),"555,000",Time of Bonobo bottleneck (TBotlB*1000)
+Time (yrs.),"221,000",Time of Western chimpanzee bottleneck (TBotlW*1000)
+Time (yrs.),"1,500",Time of recent population decline
 Generation time (yrs.),25,Generation time
 Mutation rate,1.2e-8,Per-base per-generation mutation rate
