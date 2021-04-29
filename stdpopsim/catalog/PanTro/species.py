@@ -38,11 +38,14 @@ for name, data in genome_data.data["chromosomes"].items():
 
 _genome = stdpopsim.Genome(
     chromosomes=_chromosomes,
-    mutation_rate_citations=[_mutation_rate_citation.because(stdpopsim.CiteReason.MUT_RATE)],
-    recombination_rate_citations=[_recombination_rate_citation.because(stdpopsim.CiteReason.REC_RATE)],
     assembly_name=genome_data.data["assembly_name"],
     assembly_accession=genome_data.data["assembly_accession"],
-    assembly_citations=[_assembly_citation]
+    assembly_citations=[]
+    citations=[
+        _assembly_citation,
+        _mutation_rate_citation.because(stdpopsim.CiteReason.MUT_RATE),
+        _recombination_rate_citation.because(stdpopsim.CiteReason.REC_RATE),
+    ]
 )
 
 _gen_time_citation = stdpopsim.Citation(
@@ -65,9 +68,11 @@ _species = stdpopsim.Species(
     common_name="Chimpanzee",
     genome=_genome,
     generation_time=25,
-    generation_time_citations=[_gen_time_citation.because(stdpopsim.CiteReason.GEN_TIME)],
     population_size=15000,
-    population_size_citations=[_pop_size_citation.because(stdpopsim.CiteReason.POP_SIZE)],
+    citations=[
+        _gen_time_citation.because(stdpopsim.CiteReason.GEN_TIME),
+        _pop_size_citation.because(stdpopsim.CiteReason.POP_SIZE)
+    ]
 )
 
 stdpopsim.register_species(_species)
