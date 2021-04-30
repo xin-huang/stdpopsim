@@ -14,27 +14,27 @@ _species = stdpopsim.get_species("PanTro")
 # population definitions that are reused.
 
 _bonobo = stdpopsim.Population(
-    id="Bon",
+    id="Bonobo",
     description="Pan Paniscus"
 )
 
 _western_chimpanzee = stdpopsim.Population(
-    id="West",
+    id="Western chimpanzees",
     description="Pan Troglodytes Verus"
 )
 
 _eastern_chimpanzee = stdpopsim.Population(
-    id="East",
+    id="Eastern chimpanzees",
     description="Pan Troglodytes Schweinfurthii"
 )
 
 _central_chimpanzee = stdpopsim.Population(
-    id="Cent",
+    id="Central chimpanzees",
     description="Pan Troglodytes Troglodytes"
 )
 
 _nigeria_cameroon_chimpanzee = stdpopsim.Population(
-    id="NigCam",
+    id="Nigeria-Cameroon chimpanzees",
     description="Pan Troglodytes Ellioti"
 )
 
