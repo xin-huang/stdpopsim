@@ -111,12 +111,12 @@ def _bcen_4D16():
     
     # times (generation)
     T_Bon_split = int(1562000/generation_time) # Time of bonobo split from the ancestral population
+    T_botl_Bon = int(439000/generation_time) # Time of bonobo bottleneck
     T_NigCam_split = int(429000/generation_time) # Time of nigeria-cameroon chimpanzee split from the ancestral common chimpanzees
     T_East_Cent_split = int(104000/generation_time) # Time of eastern and central chimpanzee split
+    T_botl_NigCam = int(86000/generation_time) # Time of nigeria-cameroon chimpanzee bottleneck
     T_Bon_mig_stop = int(77000/generation_time) # Time of bonobo migration stop
     T_NigCam_mig_stop = int(15000/generation_time) # Time of nigeria-cameroon chimpanzee migration stop
-    T_botl_Bon = int(439000/generation_time) # Time of bonobo bottleneck
-    T_botl_NigCam = int(86000/generation_time) # Time of nigeria-cameroon chimpanzee bottleneck
     T_resize = int(1700/generation_time) # Time of recent population decline
     
     population_configurations=[
@@ -220,13 +220,6 @@ def _bcen_4D16():
         msprime.MigrationRateChange(
             time=T_East_Cent_split, rate=m_NigCam_aEC, matrix_index=(3, 1)
         ),
-        # 100-generation bottleneck in bonobos
-        msprime.PopulationParametersChange(
-            time=T_botl_Bon-100, initial_size=N_botl_Bon, population_id=0
-        ),
-        msprime.PopulationParametersChange(
-            time=T_botl_Bon, initial_size=N_anc_Bon, population_id=0
-        ),
         # 100-generation bottleneck in nigeria-cameroon chimpanzees after split from ancestral common chimpanzees
         msprime.PopulationParametersChange(
             time=T_NigCam_split-100, initial_size=N_botl_split_NigCam, population_id=2
@@ -247,6 +240,13 @@ def _bcen_4D16():
         ),
         msprime.MigrationRateChange(
             time=T_NigCam_split, rate=m_aC_Bon, matrix_index=(1, 0)
+        ),
+        # 100-generation bottleneck in bonobos
+        msprime.PopulationParametersChange(
+            time=T_botl_Bon-100, initial_size=N_botl_Bon, population_id=0
+        ),
+        msprime.PopulationParametersChange(
+            time=T_botl_Bon, initial_size=N_anc_Bon, population_id=0
         ),
         # merge ancestral common chimpanzees and bonobos
         msprime.MassMigration(
@@ -335,11 +335,11 @@ def _bcew_4D16():
     # times (generation)
     T_Bon_split = int(1989000/generation_time) # Time of bonobo split from the ancestral population
     T_West_split = int(603000/generation_time) # Time of western chimpanzee split from the ancestral common chimpanzees
+    T_botl_Bon = int(555000/generation_time) # Time of bonobo bottleneck
+    T_botl_West = int(221000/generation_time) # Time of western chimpanzee bottleneck
     T_East_Cent_split = int(164000/generation_time) # Time of eastern and central chimpanzee split
     T_Bon_mig_stop = int(125000/generation_time) # Time of bonobo migration stop
     T_West_mig_stop = int(112000/generation_time) # Time of western chimpanzee migration stop
-    T_botl_Bon = int(555000/generation_time) # Time of bonobo bottleneck
-    T_botl_West = int(221000/generation_time) # Time of western chimpanzee bottleneck
     T_resize = int(1500/generation_time) # Time of recent population decline
     
     population_configurations=[
@@ -404,13 +404,6 @@ def _bcew_4D16():
         msprime.MigrationRateChange(
             time=T_Bon_mig_stop, rate=m_Cent_Bon, matrix_index=(1, 0)
         ),
-        # 100-generation bottleneck in western chimpanzees
-        msprime.PopulationParametersChange(
-            time=T_botl_West-100, initial_size=N_botl_West, population_id=3
-        ),
-        msprime.PopulationParametersChange(
-            time=T_botl_West, initial_size=N_anc_West, population_id=3
-        ),
         # 100-generation bottleneck in central chimpanzees after split from ancestral central-eastern chimpanzees
         msprime.PopulationParametersChange(
             time=T_East_Cent_split-100, initial_size=N_botl_split_Cent, population_id=1
@@ -442,6 +435,13 @@ def _bcew_4D16():
         ),
         msprime.MigrationRateChange(
             time=T_East_Cent_split, rate=m_West_aEC, matrix_index=(3, 1)
+        ),
+        # 100-generation bottleneck in western chimpanzees
+        msprime.PopulationParametersChange(
+            time=T_botl_West-100, initial_size=N_botl_West, population_id=3
+        ),
+        msprime.PopulationParametersChange(
+            time=T_botl_West, initial_size=N_anc_West, population_id=3
         ),
         # 100-generation bottleneck in bonobos
         msprime.PopulationParametersChange(
