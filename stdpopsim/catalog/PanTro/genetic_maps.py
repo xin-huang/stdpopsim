@@ -1,7 +1,7 @@
 import stdpopsim
 
 _panmap2012 = stdpopsim.Citation(
-    doi="https://doi.org/10.1038/nature06258",
+    doi="https://doi.org/10.1126/science.1216872",
     year=2012,
     author="Auton et al.",
 )
