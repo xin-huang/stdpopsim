@@ -550,8 +550,8 @@ def _bonobo_archaic_admixture_4K19():
     T_Bon_split = int(1821000/generation_time) # Time of Bonobo split
     T_ghost_admix = int(1209000/generation_time) # Time of admixture with the ghost population
     T_West_split = int(631000/generation_time) # Time of Western chimpanzees split
-    T_anc_Bon_resize = int(388000/generation_time) # Time of ancestral Bonobo resize
     T_anc_Cent_resize = int(547000/generation_time) # Time of ancestral Central chimpanzees resize
+    T_anc_Bon_resize = int(388000/generation_time) # Time of ancestral Bonobo resize
     T_anc_West_resize = int(207000/generation_time) # Time of ancestral Western chimpanzees resize
     T_Bon_mig_stop = int(201000/generation_time) # Time of Bonobo migration stop
     T_West_mig_stop = int(195000/generation_time) # Time of Western chimpanzees migration stop
@@ -615,10 +615,10 @@ def _bonobo_archaic_admixture_4K19():
             time=T_anc_West_resize, initial_size=N_anc_West, population_id=2
         ),
         msprime.PopulationParametersChange(
-            time=T_anc_Cent_resize, initial_size=N_anc_Cent, population_id=1
+            time=T_anc_Bon_resize, initial_size=N_anc_Bon, population_id=0
         ),
         msprime.PopulationParametersChange(
-            time=T_anc_Bon_resize, initial_size=N_anc_Bon, population_id=0
+            time=T_anc_Cent_resize, initial_size=N_anc_Cent, population_id=1
         ),
         # merge western into central chimpanzees
         msprime.MassMigration(
