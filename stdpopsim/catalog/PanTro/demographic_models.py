@@ -147,7 +147,7 @@ def _bcen_4D16():
     ]
     
     demographic_events=[
-        # Recent population decline
+        # recent population decline
         msprime.PopulationParametersChange(
             time=T_resize, initial_size=N_Bon, population_id=0
         ),
@@ -370,7 +370,7 @@ def _bcew_4D16():
     ]
     
     demographic_events=[
-        # Recent population decline
+        # recent population decline
         msprime.PopulationParametersChange(
             time=T_resize, initial_size=N_Bon, population_id=0
         ),
@@ -546,15 +546,17 @@ def _bonobo_archaic_admixture_4K19():
     admix_prop = 0.11 # admixture proportion from the ghost
     
     # Times (generation)
-    T_ghost_split = int(3229000/generation_time)
-    T_Bon_split = int(1821000/generation_time)
-    T_West_split = int(631000/generation_time)
-    T_Bon_mig_stop = int(201000/generation_time)
-    T_West_mig_stop = int(195000/generation_time)
-    T_Bon_resize = int(388000/generation_time)
-    T_Cent_resize = int(547000/generation_time)
-    T_West_resize = int(207000/generation_time)
-    T_ghost_admix = int(1209000/generation_time)
+    T_ghost_split = int(3229000/generation_time) # Time of the ghost population split
+    T_Bon_split = int(1821000/generation_time) # Time of Bonobo split
+    T_ghost_admix = int(1209000/generation_time) # Time of admixture with the ghost population
+    T_West_split = int(631000/generation_time) # Time of Western chimpanzees split
+    T_anc_Bon_resize = int(388000/generation_time) # Time of ancestral Bonobo resize
+    T_anc_Cent_resize = int(547000/generation_time) # Time of ancestral Central chimpanzees resize
+    T_anc_West_resize = int(207000/generation_time) # Time of ancestral Western chimpanzees resize
+    T_Bon_mig_stop = int(201000/generation_time) # Time of Bonobo migration stop
+    T_West_mig_stop = int(195000/generation_time) # Time of Western chimpanzees migration stop
+    T_rec_resize = 50 # Time of recent population decline
+    
     
     population_configurations=[
         msprime.PopulationConfiguration(
@@ -584,6 +586,16 @@ def _bonobo_archaic_admixture_4K19():
     ]
     
     demographic_events=[
+        # recent population decline
+        msprime.PopulationParametersChange(
+            time=T_rec_resize, initial_size=N_Bon, population_id=0
+        ),
+        msprime.PopulationParametersChange(
+            time=T_rec_resize, initial_size=N_Cent, population_id=1
+        ),
+        msprime.PopulationParametersChange(
+            time=T_rec_resize, initial_size=N_West, population_id=2
+        ),
         # migration between western and central chimpanzees
         msprime.MigrationRateChange(
             time=T_West_mig_stop, rate=m_Cent_West, matrix_index=(1, 2)
@@ -598,12 +610,15 @@ def _bonobo_archaic_admixture_4K19():
         msprime.MigrationRateChange(
             time=T_Bon_mig_stop, rate=m_Cent_Bon, matrix_index=(1, 0)
         ),
-        # admixture from the ghost into bonobos
-        msprime.MassMigration(
-            time=T_ghost_admix,
-            proportion=admix_prop,
-            source=3,
-            destination=0,
+        # past resize
+        msprime.PopulationParametersChange(
+            time=T_anc_West_resize, initial_size=N_anc_West, population_id=2
+        ),
+        msprime.PopulationParametersChange(
+            time=T_anc_Cent_resize, initial_size=N_anc_Cent, population_id=1
+        ),
+        msprime.PopulationParametersChange(
+            time=T_anc_Bon_resize, initial_size=N_anc_Bon, population_id=0
         ),
         # merge western into central chimpanzees
         msprime.MassMigration(
@@ -623,6 +638,13 @@ def _bonobo_archaic_admixture_4K19():
         ),
         msprime.PopulationParametersChange(
             time=T_West_split, initial_size=N_anc_CChimp, population_id=1
+        ),
+        # admixture from the ghost into bonobos
+        msprime.MassMigration(
+            time=T_ghost_admix,
+            proportion=admix_prop,
+            source=3,
+            destination=0,
         ),
         # merge common chimpanzees and bonobos
         msprime.MassMigration(
