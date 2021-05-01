@@ -21,9 +21,10 @@ Time (yrs.),"1,821,000",Time of Bonobo split
 Time (yrs.),"631,000",Time of Western chimpanzees split
 Time (yrs.),"201,000",Time of Bonobo migration stop
 Time (yrs.),"195,000",Time of Western chimpanzees migration stop
-Time (yrs.),"388,000",Time of Bonobo resize
-Time (yrs.),"547,000",Time of Central chimpanzees resize
-Time (yrs.),"207,000",Time of Western chimpanzees resize
+Time (yrs.),"388,000",Time of ancestral Bonobo resize
+Time (yrs.),"547,000",Time of ancestral Central chimpanzees resize
+Time (yrs.),"207,000",Time of ancestral Western chimpanzees resize
+Time (yrs.),"1,250",Time of recent population decline
 Time (yrs.),"1,209,000",Time of admixture with the ghost population
 Admix percentage,0.11,Admixture contribution from the ghost population
 Generation time (yrs.),25,Generation time
