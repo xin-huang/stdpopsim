@@ -55,9 +55,9 @@ _gen_time_citation = stdpopsim.Citation(
 )
 
 _pop_size_citation = stdpopsim.Citation(
-    author="de Manuel et al.",
-    year="2016",
-    doi="https://doi.org/10.1126/science.aag2602",
+    author="Auton et al.",
+    year="2012",
+    doi="https://doi.org/10.1126/science.1216872",
     reasons={stdpopsim.CiteReason.POP_SIZE},
 )
 
@@ -68,7 +68,7 @@ _species = stdpopsim.Species(
     common_name="Chimpanzee",
     genome=_genome,
     generation_time=25,
-    population_size=15000,
+    population_size=10000,
     citations=[
         _gen_time_citation.because(stdpopsim.CiteReason.GEN_TIME),
         _pop_size_citation.because(stdpopsim.CiteReason.POP_SIZE)
