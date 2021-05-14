@@ -16,7 +16,7 @@ _gm = stdpopsim.GeneticMap(
         This genetic map is from the Panmap project (http://panmap.uchicago.edu/data.html).
         The original map was inferred using 10 Western chimpanzee individuals with the reference genome panTro2.
         Here, the genomic coordinates were converted from panTro2 to panTro3 first, then converted from panTro3 to Pan_tro_3.0 (panTro5) using the LiftOver service in the UCSC genome browser (https://genome.ucsc.edu/cgi-bin/hgLiftOver).
-        The recombination rates were also converted from the population-scale recombinate rate per site (4Ner/kb) to the recombination rate per site (cM/Mb) by assuming the effective population size Ne = 10,000.
+        The recombination rates were also converted from the population-scale recombinate rate per site (4Ner/kb) to the recombination rate per site (cM/Mb) by assuming the effective population size Ne = 15,000.
         """,
     url=(
         "https://stdpopsim.s3-us-west-2.amazonaws.com/genetic_maps/"
